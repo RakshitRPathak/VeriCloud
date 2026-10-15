@@ -1,0 +1,179 @@
+=== exp1_main ===
+done in 170s
+
+## Clean (no campaign)
+                                               Acc     Macro-F1 Prec.\ (asserted)    ECE
+Top-1 evidence                         0.789±0.007  0.779±0.006             0.837  0.030
+Majority vote                          0.804±0.009  0.797±0.008             0.860  0.056
+Credibility prior (no learning)        0.804±0.013  0.798±0.013             0.860  0.053
+Truth discovery (EM, no independence)  0.809±0.011  0.801±0.010             0.866  0.060
+VeriCloud                              0.808±0.016  0.801±0.015             0.873  0.052
+Oracle reliability                     0.826±0.010  0.816±0.010             0.896  0.042
+Oracle reliability + stance            0.848±0.015  0.841±0.015             0.927  0.038
+{'best_baseline': 'Truth discovery (EM, no independence)', 'mean_diff_macro_f1': -0.00026241338341140286, 'wilcoxon_p': 1.0, 'n_seeds': 8}
+
+## Under attack (30% of claims targeted, 10 sybil articles each)
+                                               Acc     Macro-F1 Prec.\ (asserted)    ECE
+Top-1 evidence                         0.708±0.008  0.700±0.011             0.718  0.031
+Majority vote                          0.576±0.050  0.579±0.062             0.538  0.063
+Credibility prior (no learning)        0.658±0.022  0.674±0.022             0.648  0.112
+Truth discovery (EM, no independence)  0.547±0.087  0.533±0.096             0.498  0.076
+VeriCloud                              0.793±0.012  0.790±0.013             0.836  0.046
+Oracle reliability                     0.832±0.015  0.824±0.016             0.890  0.043
+Oracle reliability + stance            0.849±0.014  0.844±0.015             0.913  0.039
+{'best_baseline': 'Top-1 evidence', 'mean_diff_macro_f1': 0.09030736187079759, 'wilcoxon_p': 0.0078125, 'n_seeds': 8}
+
+## Attack + noisy stance model (10% random stance outputs)
+                                               Acc     Macro-F1 Prec.\ (asserted)    ECE
+Top-1 evidence                         0.630±0.016  0.611±0.012             0.658  0.049
+Majority vote                          0.506±0.042  0.494±0.058             0.493  0.061
+Credibility prior (no learning)        0.593±0.017  0.596±0.017             0.604  0.100
+Truth discovery (EM, no independence)  0.473±0.060  0.417±0.059             0.452  0.048
+VeriCloud                              0.688±0.016  0.677±0.016             0.758  0.052
+Oracle reliability                     0.733±0.009  0.719±0.009             0.824  0.047
+Oracle reliability + stance            0.849±0.014  0.844±0.015             0.913  0.039
+{'best_baseline': 'Top-1 evidence', 'mean_diff_macro_f1': 0.06666988627261089, 'wilcoxon_p': 0.0078125, 'n_seeds': 8}
+=== exp2_adversarial ===
+done 206s
+share                                   0.00   0.15   0.30   0.45   0.60
+method                                                                  
+Majority vote                          0.789  0.686  0.575  0.483  0.498
+Top-1 evidence                         0.774  0.729  0.700  0.656  0.640
+Credibility prior (no learning)        0.792  0.724  0.679  0.610  0.580
+Truth discovery (EM, no independence)  0.789  0.706  0.479  0.483  0.498
+VeriCloud                              0.799  0.789  0.796  0.800  0.814
+Oracle reliability                     0.815  0.821  0.834  0.841  0.857
+strength                                  5      10     20     30
+method                                                           
+Majority vote                          0.684  0.575  0.472  0.473
+Top-1 evidence                         0.710  0.700  0.680  0.678
+Credibility prior (no learning)        0.731  0.679  0.559  0.513
+Truth discovery (EM, no independence)  0.745  0.479  0.472  0.472
+VeriCloud                              0.802  0.796  0.783  0.778
+Oracle reliability                     0.839  0.834  0.818  0.821
+=== exp2b_adaptive ===
+done 111s
+attack                                    Naive attacker (new domains, burst)  Aged domains  Slow drip (6 days)  Aged domains + slow drip
+method                                                                                                                                   
+Majority vote                                                           0.515         0.504               0.719                     0.721
+Top-1 evidence                                                          0.692         0.703               0.710                     0.713
+Truth discovery (EM, no independence)                                   0.477         0.468               0.771                     0.722
+VeriCloud                                                               0.798         0.747               0.786                     0.755
+VeriCloud without newness/burst defences                                0.695         0.680               0.761                     0.743
+Oracle reliability                                                      0.827         0.823               0.823                     0.822
+=== exp3_source_learning ===
+done 43s
+                                            spearman    mae  macro_f1  sybil_mean_rel
+method                              budget                                           
+Metadata prior only                 0          0.476  0.167     0.725           0.640
+                                    20         0.476  0.167     0.725           0.640
+                                    50         0.476  0.167     0.725           0.640
+                                    100        0.476  0.167     0.725           0.640
+                                    200        0.476  0.167     0.725           0.640
+                                    400        0.476  0.167     0.725           0.640
+                                    700        0.476  0.167     0.725           0.640
+Truth-discovery EM only             0          0.404  0.177     0.716           0.653
+Verified + EM (optional)            0          0.404  0.177     0.716           0.653
+                                    20         0.417  0.174     0.726           0.647
+                                    50         0.461  0.168     0.739           0.637
+                                    100        0.519  0.161     0.756           0.624
+                                    200        0.590  0.151     0.771           0.601
+                                    400        0.616  0.150     0.789           0.560
+                                    700        0.675  0.144     0.799           0.508
+Verified labels (VeriCloud default) 0          0.476  0.167     0.725           0.640
+                                    20         0.479  0.166     0.727           0.635
+                                    50         0.505  0.161     0.743           0.627
+                                    100        0.551  0.155     0.758           0.616
+                                    200        0.612  0.145     0.777           0.597
+                                    400        0.627  0.149     0.790           0.561
+                                    700        0.679  0.144     0.800           0.510
+=== exp4_ablation ===
+done 253s
+                                        Macro-F1    Acc Prec. (asserted)    ECE
+VeriCloud (full)                     0.800±0.016  0.801            0.846  0.053
+- independence clustering            0.803±0.018  0.804            0.847  0.059
+- burst discount                     0.756±0.014  0.753            0.778  0.065
+- newness shrinkage                  0.776±0.015  0.776            0.810  0.054
+- pessimistic quantile (use median)  0.787±0.016  0.787            0.827  0.048
+- all three defences                 0.680±0.013  0.666            0.656  0.120
+- source learning (prior only)       0.758±0.024  0.754            0.782  0.056
++ truth-discovery EM (lambda=0.1)    0.798±0.018  0.799            0.843  0.051
+copy weight 0.0                      0.799±0.017  0.800            0.844  0.053
+copy weight 0.3                      0.803±0.016  0.805            0.848  0.057
+risk quantile 0.1                    0.802±0.013  0.803            0.848  0.055
+risk quantile 0.3                    0.795±0.017  0.796            0.838  0.052
+{
+ "VeriCloud (full)": {
+  "mean_diff": 0.0,
+  "wilcoxon_p": null
+ },
+ "- independence clustering": {
+  "mean_diff": 0.003055463128038227,
+  "wilcoxon_p": 0.4375
+ },
+ "- burst discount": {
+  "mean_diff": -0.04373954000418619,
+  "wilcoxon_p": 0.03125
+ },
+ "- newness shrinkage": {
+  "mean_diff": -0.023626213146941022,
+  "wilcoxon_p": 0.03125
+ },
+ "- pessimistic quantile (use median)": {
+  "mean_diff": -0.013024069377240636,
+  "wilcoxon_p": 0.03125
+ },
+ "- all three defences": {
+  "mean_diff": -0.11954186774617644,
+  "wilcoxon_p": 0.03125
+ },
+ "- source learning (prior only)": {
+  "mean_diff": -0.04208771964861149,
+  "wilcoxon_p": 0.03125
+ },
+ "+ truth-discovery EM (lambda=0.1)": {
+  "mean_diff": -0.002261366538221362,
+  "wilcoxon_p": 0.0625
+ },
+ "copy weight 0.0": {
+  "mean_diff": -0.0007660571582872588,
+  "wilcoxon_p": 0.4375
+ },
+ "copy weight 0.3": {
+  "mean_diff": 0.0032848828765747276,
+  "wilcoxon_p": 0.09375
+ },
+ "risk quantile 0.1": {
+  "mean_diff": 0.0019674575463481023,
+  "wilcoxon_p": 0.5625
+ },
+ "risk quantile 0.3": {
+  "mean_diff": -0.005235684602678574,
+  "wilcoxon_p": 0.03125
+ }
+}
+theta      0.60   0.70   0.80   0.90   0.97
+macro_f1  0.777  0.789  0.792  0.793  0.793
+               recall_at_20  macro_f1
+retrieval                            
+bm25                  0.743     0.791
+bm25+char             0.760     0.792
+bm25+char+lsa         0.744     0.787
+char                  0.773     0.781
+=== exp5_calibration_reports ===
+                                         ece   aurc  risk_at_50pct_coverage  risk_at_80pct_coverage
+Majority vote                          0.035  0.485                   0.480                   0.454
+Truth discovery (EM, no independence)  0.010  0.494                   0.482                   0.506
+Credibility prior (no learning)        0.084  0.281                   0.293                   0.317
+VeriCloud                              0.028  0.056                   0.037                   0.114
+Oracle reliability                     0.030  0.030                   0.013                   0.057
+[[0.808 0.142 0.051]
+ [0.118 0.713 0.169]
+ [0.008 0.069 0.923]]
+reports written: ['00_index.md', 'attacked_claim_defended.json', 'attacked_claim_defended.md', 'correct_not_enough_info.json', 'correct_not_enough_info.md', 'correct_refuted.json', 'correct_refuted.md', 'correct_supported.json', 'correct_supported.md', 'wrong_verdict.json', 'wrong_verdict.md']
+report-world test accuracy 0.782
+=== exp6_efficiency ===
+{'facts': 500, 'articles': 3043, 'index_build_s': 0.6690859794616699, 'p50_ms': np.float64(21.616484499986655), 'p95_ms': np.float64(24.100023100032782), 'batch_claims_per_s': 891.3214305176615}
+{'facts': 1000, 'articles': 5788, 'index_build_s': 0.9783234596252441, 'p50_ms': np.float64(18.108766999944237), 'p95_ms': np.float64(24.471240999929478), 'batch_claims_per_s': 839.2150184122451}
+{'facts': 2000, 'articles': 10935, 'index_build_s': 1.8770952224731445, 'p50_ms': np.float64(17.626707000033548), 'p95_ms': np.float64(18.577683150056146), 'batch_claims_per_s': 637.3330450328041}
+{'facts': 3000, 'articles': 15840, 'index_build_s': 2.3374547958374023, 'p50_ms': np.float64(19.411770499971226), 'p95_ms': np.float64(24.284129049999592), 'batch_claims_per_s': 459.60831872695945}

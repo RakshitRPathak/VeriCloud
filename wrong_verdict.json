@@ -1,0 +1,172 @@
+{
+  "claim": "Priya Chaudhry arrived in Belhol",
+  "parsed": {
+    "subject": "Priya Chaudhry",
+    "relation": 3,
+    "object": "Belhol"
+  },
+  "verdict": "REFUTED",
+  "probability_supported": 0.336,
+  "probability_80ci": [
+    0.128,
+    0.757
+  ],
+  "evidence_mass": 4.51,
+  "flip_probability": 0.365,
+  "needs_human_review": true,
+  "flags": [
+    "possible coordinated burst: 6 'refutes' articles from unproven sources within 0.5 day(s)",
+    "verdict rests on at most one independent validated source",
+    "verdict unstable under source-reliability uncertainty (flip probability 36%)"
+  ],
+  "cited_sources": [
+    {
+      "source": "Global Tribune 8",
+      "article_id": 10578,
+      "published_day": 129.6,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.865,
+      "reliability_80ci": [
+        0.772,
+        0.974
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Priya Chaudhry arrived in Belcas. The story is developing and will be updated. Coverage of the topic has increased sharply."
+    }
+  ],
+  "not_relied_upon": [
+    {
+      "source": "The Daily Dispatch 15",
+      "article_id": 9966,
+      "published_day": 122.5,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.532,
+      "reliability_80ci": [
+        0.362,
+        0.702
+      ],
+      "independent": false,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet; near-duplicate / syndicated copy (counted at reduced weight)",
+      "excerpt": "Priya Chaudhry held in Belhol. Observers described the move as significant. a development comes amid growing public attention."
+    },
+    {
+      "source": "Evening Dispatch 94",
+      "article_id": 10000,
+      "published_day": 123.0,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.64,
+      "reliability_80ci": [
+        0.501,
+        0.784
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "credibility below citation threshold",
+      "excerpt": "Priya Chaudhry held talks in Belhol. Analysts say the news could shape the coming months. Several experts weighed in on the implications."
+    },
+    {
+      "source": "Morning Dispatch 29",
+      "article_id": 9928,
+      "published_day": 122.1,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.715,
+      "reliability_80ci": [
+        0.62,
+        0.815
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "credibility below citation threshold",
+      "excerpt": "Priya Chaudhry held talks in Belhol. Observers described the move as significant. The development comes amid growing public attention."
+    },
+    {
+      "source": "Metro Standard 14",
+      "article_id": 10558,
+      "published_day": 129.2,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.5,
+      "reliability_80ci": [
+        0.34,
+        0.66
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Priya Chaudhry arrived in Belcas. Analysts say the news could shape the coming months. The announcement was widely discussed online."
+    },
+    {
+      "source": "City Chronicle 44",
+      "article_id": 10566,
+      "published_day": 129.4,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.414,
+      "reliability_80ci": [
+        0.265,
+        0.559
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "credibility below citation threshold",
+      "excerpt": "Priya Chaudhry is to Belcas. The development comes amid growing public attention. Several experts weighed in on the implications."
+    },
+    {
+      "source": "Morning Observer 56",
+      "article_id": 10564,
+      "published_day": 129.3,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.638,
+      "reliability_80ci": [
+        0.477,
+        0.806
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Priya Chaudhry is travelling to Belcas. The development comes amid growing public attention. Several experts weighed in on the implications."
+    },
+    {
+      "source": "National Standard 3",
+      "article_id": 10570,
+      "published_day": 129.5,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.647,
+      "reliability_80ci": [
+        0.487,
+        0.814
+      ],
+      "independent": false,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet; near-duplicate / syndicated copy (counted at reduced weight)",
+      "excerpt": "Priya Chaudhry is travelling to Belcas. The development comes amid growing public attention. Several experts weighed in on the implications."
+    },
+    {
+      "source": "Open Standard 14",
+      "article_id": 10540,
+      "published_day": 129.0,
+      "stance": "refutes",
+      "stance_confidence": 0.983,
+      "reliability": 0.469,
+      "reliability_80ci": [
+        0.309,
+        0.629
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Priya Chaudhry is travelling for Belcas. The development comes amid growing public attention. Several experts weighed in on a implications."
+    }
+  ],
+  "n_not_relied_upon": 10,
+  "_true_label": "SUPPORTED"
+}

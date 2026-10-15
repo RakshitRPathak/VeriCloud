@@ -1,0 +1,22 @@
+{
+  "claim": "Rafael Eriksen held talks in Dunwick",
+  "parsed": {
+    "subject": "Rafael Eriksen",
+    "relation": 3,
+    "object": "Dunwick"
+  },
+  "verdict": "NOT ENOUGH INFO",
+  "probability_supported": 0.314,
+  "probability_80ci": [
+    0.313,
+    0.314
+  ],
+  "evidence_mass": 0.0,
+  "flip_probability": 0.0,
+  "needs_human_review": false,
+  "flags": [],
+  "cited_sources": [],
+  "not_relied_upon": [],
+  "n_not_relied_upon": 0,
+  "_true_label": "NOT ENOUGH INFO"
+}

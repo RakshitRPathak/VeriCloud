@@ -1,0 +1,71 @@
+{
+  "claim": "Isabel Delacroix won the Golden Quill Award",
+  "parsed": {
+    "subject": "Isabel Delacroix",
+    "relation": 0,
+    "object": "Golden Quill Award"
+  },
+  "verdict": "SUPPORTED",
+  "probability_supported": 0.908,
+  "probability_80ci": [
+    0.908,
+    0.999
+  ],
+  "evidence_mass": 2.52,
+  "flip_probability": 0.0,
+  "needs_human_review": false,
+  "flags": [],
+  "cited_sources": [
+    {
+      "source": "Global Standard 22",
+      "article_id": 10416,
+      "published_day": 127.7,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.859,
+      "reliability_80ci": [
+        0.793,
+        0.932
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Isabel Delacroix has won the Golden Quill Award. Officials declined to comment further. Analysts say the news could shape the coming months."
+    },
+    {
+      "source": "Metro Ledger 40",
+      "article_id": 10364,
+      "published_day": 127.3,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.815,
+      "reliability_80ci": [
+        0.71,
+        0.933
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "The Golden Quill Award was awarded to Isabel Delacroix. Several experts weighed in on the implications. Market watchers are following the situation closely."
+    },
+    {
+      "source": "Capital Tribune 92",
+      "article_id": 10462,
+      "published_day": 128.0,
+      "stance": "supports",
+      "stance_confidence": 0.508,
+      "reliability": 0.779,
+      "reliability_80ci": [
+        0.661,
+        0.909
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Isabel Dleacroix had won the Golden Quill Award. Officials to comment further. Analysts say the news could shape the coming months."
+    }
+  ],
+  "not_relied_upon": [],
+  "n_not_relied_upon": 0,
+  "_true_label": "SUPPORTED"
+}

@@ -1,0 +1,41 @@
+{
+  "claim": "Hugo Sorensen quit Veridian Energy",
+  "parsed": {
+    "subject": "Hugo Sorensen",
+    "relation": 5,
+    "object": "Veridian Energy"
+  },
+  "verdict": "REFUTED",
+  "probability_supported": 0.164,
+  "probability_80ci": [
+    0.026,
+    0.199
+  ],
+  "evidence_mass": 1.0,
+  "flip_probability": 0.0,
+  "needs_human_review": true,
+  "flags": [
+    "verdict rests on at most one independent validated source"
+  ],
+  "cited_sources": [
+    {
+      "source": "The Daily Post 49",
+      "article_id": 10339,
+      "published_day": 126.9,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.764,
+      "reliability_80ci": [
+        0.67,
+        0.865
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Hugo Sorensen resigned from Granite Pharma. Local reaction has been mixed. The announcement was widely discussed online."
+    }
+  ],
+  "not_relied_upon": [],
+  "n_not_relied_upon": 0,
+  "_true_label": "REFUTED"
+}

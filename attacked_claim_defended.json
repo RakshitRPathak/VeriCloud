@@ -1,0 +1,186 @@
+{
+  "claim": "Pavel Verhoeven resigned from Maplecrest Energy",
+  "parsed": {
+    "subject": "Pavel Verhoeven",
+    "relation": 5,
+    "object": "Maplecrest Energy"
+  },
+  "verdict": "REFUTED",
+  "probability_supported": 0.187,
+  "probability_80ci": [
+    0.045,
+    0.499
+  ],
+  "evidence_mass": 2.44,
+  "flip_probability": 0.1,
+  "needs_human_review": true,
+  "flags": [
+    "possible coordinated burst: 8 'supports' articles from unproven sources within 0.5 day(s)"
+  ],
+  "cited_sources": [
+    {
+      "source": "Capital Gazette 68",
+      "article_id": 10678,
+      "published_day": 130.8,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.91,
+      "reliability_80ci": [
+        0.844,
+        0.992
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Pavel Verhoeven resigned from Maplecrest Energy. Officials declined to comment further. The development comes amid growing public attention."
+    },
+    {
+      "source": "City Dispatch 51",
+      "article_id": 10622,
+      "published_day": 130.3,
+      "stance": "refutes",
+      "stance_confidence": 1.0,
+      "reliability": 0.816,
+      "reliability_80ci": [
+        0.718,
+        0.924
+      ],
+      "independent": true,
+      "validated": true,
+      "reason_not_relied_on": null,
+      "excerpt": "Pavel Verhoeven resigned from Kestrel Partners. Officials declined to comment further. The news was first noticed by readers over the weekend."
+    }
+  ],
+  "not_relied_upon": [
+    {
+      "source": "Morning Observer 9",
+      "article_id": 10651,
+      "published_day": 130.5,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.529,
+      "reliability_80ci": [
+        0.357,
+        0.703
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven resigned from Maplecrest Energy. Officials declined for comment further. The development comes amid growing public attention."
+    },
+    {
+      "source": "Frontier Gazette 27",
+      "article_id": 10701,
+      "published_day": 131.0,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.578,
+      "reliability_80ci": [
+        0.409,
+        0.75
+      ],
+      "independent": false,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet; near-duplicate / syndicated copy (counted at reduced weight)",
+      "excerpt": "Pavel Verhoeven resigned from Maplecrest Energy. Officials declined to comment further. The development comes amid growing public attention."
+    },
+    {
+      "source": "The Daily Gazette 39",
+      "article_id": 10682,
+      "published_day": 130.8,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.535,
+      "reliability_80ci": [
+        0.376,
+        0.696
+      ],
+      "independent": false,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet; near-duplicate / syndicated copy (counted at reduced weight)",
+      "excerpt": "Pavel Verhoeven resigned from Maplecrest Energy. Officials declined to comment further. The development comes amid growing public attention."
+    },
+    {
+      "source": "Frontier Ledger 19",
+      "article_id": 10680,
+      "published_day": 130.8,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.526,
+      "reliability_80ci": [
+        0.354,
+        0.7
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven has stepped down from Maplecrest Energy. Observers described the move as significant. Market watchers are following the situation closely."
+    },
+    {
+      "source": "Capital Observer 88",
+      "article_id": 10645,
+      "published_day": 130.5,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.533,
+      "reliability_80ci": [
+        0.361,
+        0.707
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven left Maplecrest Energy. The news was first noticed by readers over the weekend. Officials declined to comment further."
+    },
+    {
+      "source": "Global Tribune 42",
+      "article_id": 10665,
+      "published_day": 130.6,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.491,
+      "reliability_80ci": [
+        0.33,
+        0.651
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven has stepped down from Maplecrest Energy. Market watchers are following the situation closely. The news was first noticed by readers over the wee"
+    },
+    {
+      "source": "Evening Standard 54",
+      "article_id": 10692,
+      "published_day": 130.9,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.45,
+      "reliability_80ci": [
+        0.289,
+        0.608
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven quit Maplecrest Energy. The news was first noticed by readers over the weekend. Further details are expected later this week."
+    },
+    {
+      "source": "Open Chronicle 60",
+      "article_id": 10643,
+      "published_day": 130.5,
+      "stance": "supports",
+      "stance_confidence": 1.0,
+      "reliability": 0.682,
+      "reliability_80ci": [
+        0.528,
+        0.844
+      ],
+      "independent": true,
+      "validated": false,
+      "reason_not_relied_on": "no track record yet",
+      "excerpt": "Pavel Verhoeven has stepped down from Maplecrest Energy. The story is developing and will be updated. Analysts say the news could shape the coming months."
+    }
+  ],
+  "n_not_relied_upon": 8,
+  "_true_label": "REFUTED"
+}

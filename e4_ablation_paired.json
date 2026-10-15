@@ -1,0 +1,50 @@
+{
+  "VeriCloud (full)": {
+    "mean_diff": 0.0,
+    "wilcoxon_p": null
+  },
+  "- independence clustering": {
+    "mean_diff": 0.003055463128038227,
+    "wilcoxon_p": 0.4375
+  },
+  "- burst discount": {
+    "mean_diff": -0.04373954000418619,
+    "wilcoxon_p": 0.03125
+  },
+  "- newness shrinkage": {
+    "mean_diff": -0.023626213146941022,
+    "wilcoxon_p": 0.03125
+  },
+  "- pessimistic quantile (use median)": {
+    "mean_diff": -0.013024069377240636,
+    "wilcoxon_p": 0.03125
+  },
+  "- all three defences": {
+    "mean_diff": -0.11954186774617644,
+    "wilcoxon_p": 0.03125
+  },
+  "- source learning (prior only)": {
+    "mean_diff": -0.04208771964861149,
+    "wilcoxon_p": 0.03125
+  },
+  "+ truth-discovery EM (lambda=0.1)": {
+    "mean_diff": -0.002261366538221362,
+    "wilcoxon_p": 0.0625
+  },
+  "copy weight 0.0": {
+    "mean_diff": -0.0007660571582872588,
+    "wilcoxon_p": 0.4375
+  },
+  "copy weight 0.3": {
+    "mean_diff": 0.0032848828765747276,
+    "wilcoxon_p": 0.09375
+  },
+  "risk quantile 0.1": {
+    "mean_diff": 0.0019674575463481023,
+    "wilcoxon_p": 0.5625
+  },
+  "risk quantile 0.3": {
+    "mean_diff": -0.005235684602678574,
+    "wilcoxon_p": 0.03125
+  }
+}
