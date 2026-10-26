@@ -1,5 +1,7 @@
 # VeriCloud: evidence-grounded news verification with source-validated reporting
 
+[![tests](https://github.com/RakshitRPathak/VeriCloud/actions/workflows/ci.yml/badge.svg)](https://github.com/RakshitRPathak/VeriCloud/actions/workflows/ci.yml)
+
 *(Formerly "NewsCloud"; renamed on request. Package: `vericloud`, class: `VeriCloud`.)*
 
 ![architecture](results/figures/architecture.png)
