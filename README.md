@@ -164,3 +164,7 @@ python3 verify_cli.py --claim-id 5 --attack   # inject a sybil campaign and comp
 ## Mapping to a paper
 
 Suggested contribution statements this code can support, if reconciled with your real system: (i) source validation with newness shrinkage and a pessimistic quantile; (ii) a collusion-aware burst discount; (iii) abstention gates with calibrated verdicts and flip probabilities; (iv) a report that separates relied-on from not-relied-on sources. Report the clean-world tie and the adaptive-attacker degradation alongside the wins.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
